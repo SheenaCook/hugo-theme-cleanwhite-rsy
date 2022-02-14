@@ -28,14 +28,22 @@
     <!-- Short About -->
 	{{ if .Site.Params.about_me }}
     <section class="visible-md visible-lg">
-	<hr><h5><a href="{{ "/top/about" | relLangURL }}">ABOUT ME</a></h5>
+	<!-- <hr><h5><a href="{{ "/top/about" | relLangURL }}">ABOUT ME</a></h5> -->
         <div class="short-about">
             {{ with .Site.Params.sidebar_avatar }}
             <a href="{{ "/top/about" | relLangURL }}">
                <img src="{{ . | relURL }}" alt="avatar" style="cursor: pointer" />
             </a>
             {{ end }}
-            {{ with .Site.Params.sidebar_about_description }}
+            {{ with .Site.Params.sidebar_about_description_line1 }}
+                <p>{{ . }}</p>
+            {{ end }}
+
+            {{ with .Site.Params.sidebar_about_description_line2 }}
+                <p>{{ . }}</p>
+            {{ end }}
+
+            {{ with .Site.Params.sidebar_about_description_line3 }}
                 <p>{{ . }}</p>
             {{ end }}
            <!-- SNS Link -->
