@@ -1,10 +1,9 @@
 ---
-title:       "An Example Post"
+title:       "Another new poem"
 subtitle:    ""
 description: ""
-date:        2018-06-04
-author:      ""
+date:        {{ .Date}}
 image:       ""
-tags:        ["tag1", "tag2"]
-categories:  ["Tech" ]
+tags:        ["new"]
+categories:  ["Recent"]
 ---

@@ -19,12 +19,11 @@
                     </div>
                     <h1>{{ .Title }}</h1>
                     <h2 class="subheading">{{ .Params.subtitle }}</h2>
-                    <span class="meta">
-                        Posted by 
+                    <span class="meta">                 
                         {{ if .Params.author }}
                             {{ .Params.author }}
                         {{ else }}
-                                {{ .Site.Title }}
+                            {{ .Site.Title }}
                         {{ end }} 
                         on 
                         {{ .Date.Format "Monday, January 2, 2006" }}
