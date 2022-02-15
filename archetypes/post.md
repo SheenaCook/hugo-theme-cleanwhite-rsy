@@ -1,7 +1,7 @@
 ---
 title:       "Another new poem"
 subtitle:    ""
-description: ""
+description: "short-descriptiom"
 date:        {{ .Date}}
 image:       ""
 tags:        ["new"]
